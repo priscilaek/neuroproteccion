@@ -1,0 +1,219 @@
+/* Estilos CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+    background: linear-gradient(
+      90deg,
+      rgb(247, 245, 248) 25%,
+      rgb(185, 184, 186) 73%);
+    font-family: Arial, sans-serif;
+  }
+
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 32px 0;
+  background-color: #090808e8;
+}
+
+#logo-image{
+  width: 64px;
+  margin: 0 auto;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  color: #fdfdfde8;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 16px 0;
+}
+
+.header .logo img {
+  max-width: 200px;
+}
+
+.menu .nav ul li {
+  position: relative;
+  float: left;
+}
+
+.menu .nav ul li a {
+  font-size: 18px;
+  padding: 20px;
+  color: #FFFFFF;
+  display: block;
+}
+
+.menu .nav ul li a:hover {
+  color: #cf0aabe8;
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+@media(max-width:991px) {
+  .menu {
+    padding: 30px;
+  }
+
+  .menu label {
+    display: initial;
+  }
+
+  .header {
+    padding: 47px 0;
+  }
+
+  .menu .nav {
+    position:absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #040404e8;
+    display: none;
+  }
+
+  .menu .nav ul li {
+    width: 100%;
+  }
+
+  #menu:checked ~ .nav {
+    display: initial;
+  }
+
+}
+
+  .benefits1{
+    padding-top: 25px;
+    text-align: center;
+  }
+  .benefits2{
+    width: 200px;
+    height: 280px;    
+    margin: 20px;
+    display: inline-block;
+    text-align: center;
+  }
+  .imagen1{
+    width: 100%;
+  }
+  section{
+    text-align: center;
+  }
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .jumbotron {
+    background-image: url("./img/background.jpg");
+    background-size: cover;
+    color: #090909;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .jumbotron h2 {
+    margin-top: 0;
+  }
+  
+  .newsletter-form input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+  }
+  
+  .newsletter-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .catalogo {
+    background-color: #f9f9f9;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .catalogo h3 {
+    margin-top: 0;
+  }
+  
+  .product-list li {
+    list-style: none;
+    text-align: center;
+  }
+  
+  .product-list img {
+    max-width: 100%;
+  }
+  
+  .adicionales {
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  .w-6 {
+    width: 1.5rem;
+  }
+  .h-6 {
+    height: 1.5rem;
+  }
